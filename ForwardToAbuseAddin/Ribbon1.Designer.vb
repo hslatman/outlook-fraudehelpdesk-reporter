@@ -41,11 +41,12 @@
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HOME))
         Me.PhishReporter = Me.Factory.CreateRibbonTab
         Me.Group1 = Me.Factory.CreateRibbonGroup
         Me.PHISHING = Me.Factory.CreateRibbonButton
-        Me.PhishReporter.SuspendLayout
-        Me.Group1.SuspendLayout
+        Me.PhishReporter.SuspendLayout()
+        Me.Group1.SuspendLayout()
         '
         'PhishReporter
         '
@@ -59,31 +60,32 @@
         'Group1
         '
         Me.Group1.Items.Add(Me.PHISHING)
-        Me.Group1.Label = "PhishReporter"
+        Me.Group1.Label = "Fraudehelpdesk"
         Me.Group1.Name = "Group1"
         Me.Group1.Position = Me.Factory.RibbonPosition.BeforeOfficeId("GroupQuickSteps")
         '
         'PHISHING
         '
         Me.PHISHING.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
-        Me.PHISHING.Label = "PhishReporter"
+        Me.PHISHING.Image = CType(resources.GetObject("PHISHING.Image"), System.Drawing.Image)
+        Me.PHISHING.Label = "Rapporteren"
         Me.PHISHING.Name = "PHISHING"
         Me.PHISHING.OfficeImageId = "TrustCenter"
-        Me.PHISHING.ShowImage = true
-        Me.PHISHING.SuperTip = "Click this button to forward phishing attempts."
+        Me.PHISHING.ShowImage = True
+        Me.PHISHING.SuperTip = "Stuur deze email door naar de Fraudehelpdesk"
         '
         'HOME
         '
         Me.Name = "HOME"
-        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Compose, Microsoft.Outlook.Mai"& _ 
+        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Compose, Microsoft.Outlook.Mai" & _
     "l.Read"
         Me.Tabs.Add(Me.PhishReporter)
-        Me.PhishReporter.ResumeLayout(false)
-        Me.PhishReporter.PerformLayout
-        Me.Group1.ResumeLayout(false)
-        Me.Group1.PerformLayout
+        Me.PhishReporter.ResumeLayout(False)
+        Me.PhishReporter.PerformLayout()
+        Me.Group1.ResumeLayout(False)
+        Me.Group1.PerformLayout()
 
-End Sub
+    End Sub
 
     Friend WithEvents Group1 As Microsoft.Office.Tools.Ribbon.RibbonGroup
     Friend WithEvents PHISHING As Microsoft.Office.Tools.Ribbon.RibbonButton

@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Setup4"
+"ProjectName" = "8:Setup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -142,7 +142,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\PhishReporter-x64.msi"
+        "OutputFilename" = "8:Debug\\FraudehelpdeskReporter-x64.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -174,7 +174,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\PhishReporterAdd-In-x86.msi"
+        "OutputFilename" = "8:Release\\FraudehelpdeskReporterAdd-In-x86.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -381,8 +381,8 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_972439DF73FD4E1AB8A3FCEC92228EEE"
             {
-            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\PhishReporter.vsto"
-            "TargetName" = "8:PhishReporter.vsto"
+            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\FraudehelpdeskReporter.vsto"
+            "TargetName" = "8:FraudehelpdeskReporter.vsto"
             "Tag" = "8:"
             "Folder" = "8:_479C70E5422344A6944966282BE13B26"
             "Condition" = "8:"
@@ -401,8 +401,8 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5B16AC51E5F4C8B96DE3642C0DC011B"
             {
-            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\PhishReporter.dll.manifest"
-            "TargetName" = "8:PhishReporter.dll.manifest"
+            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\FraudehelpdeskReporter.dll.manifest"
+            "TargetName" = "8:FraudehelpdeskReporter.dll.manifest"
             "Tag" = "8:"
             "Folder" = "8:_479C70E5422344A6944966282BE13B26"
             "Condition" = "8:"
@@ -505,9 +505,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:PhishReporter Outlook Add-In "
+        "ProductName" = "8:Fraudehelpdesk Reporter Outlook Add-In"
         "ProductCode" = "8:{A34CAD81-D0AE-46A4-B2ED-E49AE69C1CFB}"
-        "PackageCode" = "8:{F5F4B08A-7570-4EC3-83E1-8F109AE113D9}"
+        "PackageCode" = "8:{9F2003E1-637C-47A3-B85B-9BA7F4EA4431}"
         "UpgradeCode" = "8:{8A5CEC54-EC69-4A3B-A3EB-E5874BCEF3EF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -515,15 +515,15 @@
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:2.0.0"
-        "Manufacturer" = "8:MSAdministrator"
+        "Manufacturer" = "8:Fraudehelpdesk"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:PhishReporter Outlook Add-In "
+        "Title" = "8:Fraudehelpdesk Reporter Outlook Add-In"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:MSAdministrator"
+        "ARPCONTACT" = "8:Herman Slatman (https://hermanslatman.nl)"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:PhishReporter Outlook Add-In "
-        "ARPURLINFOABOUT" = "8:http://msadministrator.com"
+        "ARPCOMMENTS" = "8:Fraudehelpdesk Reporter Outlook Add-In"
+        "ARPURLINFOABOUT" = "8:https://www.fraudehelpdesk.nl/"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -586,10 +586,10 @@
                                                         {
                                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_3EDD9F8591324317B4CDFFF55F1474FE"
                                                             {
-                                                            "Name" = "8:PhishReporter"
+                                                            "Name" = "8:FraudehelpdeskReporter"
                                                             "Condition" = "8:"
                                                             "AlwaysCreate" = "11:TRUE"
-                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:FALSE"
                                                             "Transitive" = "11:TRUE"
                                                                 "Keys"
                                                                 {
@@ -600,9 +600,9 @@
                                                                     {
                                                                     "Name" = "8:Manifest"
                                                                     "Condition" = "8:"
-                                                                    "Transitive" = "11:FALSE"
+                                                                    "Transitive" = "11:TRUE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:[TARGETDIR]PhishReporter.vsto|vstolocal"
+                                                                    "Value" = "8:[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1D22B746FCF443949911148556AF646A"
                                                                     {
@@ -618,7 +618,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:PhishReporter"
+                                                                    "Value" = "8:Fraudehelpdesk Reporter"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_FD8FE96A76824396BDF9F08BE0711FFE"
                                                                     {
@@ -626,7 +626,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:PhishReporter Outlook Add-In"
+                                                                    "Value" = "8:Fraudehelpdesk Reporter Outlook Add-In"
                                                                     }
                                                                 }
                                                             }
@@ -1088,7 +1088,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EA4616890F5A4A60BD3CFEA5BA334AA2"
             {
-            "SourcePath" = "8:..\\ForwardToAbuseAddin\\obj\\Release\\PhishReporter.dll"
+            "SourcePath" = "8:..\\ForwardToAbuseAddin\\obj\\Release\\FraudehelpdeskReporter.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_479C70E5422344A6944966282BE13B26"

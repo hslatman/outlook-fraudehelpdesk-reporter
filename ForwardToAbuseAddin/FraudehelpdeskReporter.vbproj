@@ -25,7 +25,7 @@
     <ProjectGuid>{CB225C4D-267C-4ED5-ADC7-E42A824A18C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ForwardToAbuseAddin</RootNamespace>
-    <AssemblyName>PhishReporter</AssemblyName>
+    <AssemblyName>FraudehelpdeskReporter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <StartupObject>
@@ -33,19 +33,19 @@
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <TargetFrameworkProfile />
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>C:\Users\JAR\Desktop\ForwardToAbuseAddIn\</PublishUrl>
+    <PublishUrl>C:\Publish\</PublishUrl>
     <InstallUrl />
-    <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <TargetCulture>nl</TargetCulture>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>PhishReporter</ProductName>
-    <PublisherName>MSAdministrator - Iterative Security</PublisherName>
-    <SupportUrl>http://msadministrator.com</SupportUrl>
-    <FriendlyName>PhishReporter</FriendlyName>
-    <OfficeApplicationDescription>PhishReporter Outlook Add-In is for use with Microsoft Outlook.  This Add-In reports phishing emails to a specific email address for further investigation and to update spam/phish filters.</OfficeApplicationDescription>
+    <ProductName>Fraudehelpdesk Reporter</ProductName>
+    <PublisherName>Herman Slatman</PublisherName>
+    <SupportUrl>https://hermanslatman.nl</SupportUrl>
+    <FriendlyName>Fraudehelpdesk Reporter</FriendlyName>
+    <OfficeApplicationDescription>Fraudehelpdesk Reporter Outlook Add-In rapporteert verdachte emails aan de Fraudehelpdesk.</OfficeApplicationDescription>
     <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
   <ItemGroup>
@@ -99,7 +99,7 @@
     <DebugSymbols>true</DebugSymbols>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>PhishReporter.xml</DocumentationFile>
+    <DocumentationFile>FraudehelpdeskReporter.xml</DocumentationFile>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
@@ -129,7 +129,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>PhishReporter.xml</DocumentationFile>
+    <DocumentationFile>FraudehelpdeskReporter.xml</DocumentationFile>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>

@@ -1,7 +1,8 @@
 ﻿Imports Microsoft.Office.Tools.Ribbon
 'Imports System.Windows.Forms
 Imports Microsoft.Office.Interop.Outlook
-
+Imports System
+Imports System.Reflection
 
 
 Public Class HOME
@@ -16,30 +17,30 @@ Public Class HOME
     Dim objOutlookAtt As Outlook.Attachment
 
 
-
     Private Sub Ribbon1_Load(ByVal sender As System.Object, ByVal e As RibbonUIEventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As RibbonControlEventArgs) Handles PHISHING.Click
 
-        
-        Dim exp As Outlook.Explorer = Globals.ThisAddIn.Application.ActiveExplorer()
-        If exp.Selection.Count Then
-            Dim response = MsgBox("The selected message will be forwarded to hermanslatman@hotmail.com" & vbCrLf & " and removed from your inbox.  Would you like to continue?", MsgBoxStyle.YesNo, "PhishReporter Report Phishing")
-            If response = MsgBoxResult.Yes Then
-                Dim selectedMail As Outlook.MailItem = exp.Selection(1)
-                Dim newMail As Outlook.MailItem = Globals.ThisAddIn.Application.CreateItem(Outlook.OlItemType.olMailItem)
-                newMail.Attachments.Add(selectedMail, Outlook.OlAttachmentType.olEmbeddeditem)
-                newMail.Subject = "[SPAM/PHISHING]"
+        Dim a = Assembly.GetExecutingAssembly()
+
+                Dim exp As Outlook.Explorer = Globals.ThisAddIn.Application.ActiveExplorer()
+                If exp.Selection.Count Then
+            Dim response = MsgBox("Het geselecteerde bericht zal doorgestuurd worden naar valse-email@fraudehelpdesk.nl en worden verwijderd uit uw inbox." & vbCrLf & vbCrLf & "Wilt u doorgaan?", MsgBoxStyle.YesNo, "Fraudehelpdesk Reporter")
+                    If response = MsgBoxResult.Yes Then
+                        Dim selectedMail As Outlook.MailItem = exp.Selection(1)
+                        Dim newMail As Outlook.MailItem = Globals.ThisAddIn.Application.CreateItem(Outlook.OlItemType.olMailItem)
+                        newMail.Attachments.Add(selectedMail, Outlook.OlAttachmentType.olEmbeddeditem)
+                newMail.Subject = "[SPAM/PHISHING/MALWARE] - Fraudehelpdesk Reporter v" & a.GetName().Version.ToString()
                 newMail.To = "hermanslatman@hotmail.com"
-                newMail.Send()
-                selectedMail.Delete()
-            Else
-            End If
-        Else
-            MsgBox("Please select a message to continue.", MsgBoxStyle.OkOnly, "PhishReporter - No E-Mail Message Selected")
-        End If
+                        newMail.Send()
+                        selectedMail.Delete()
+                    Else
+                    End If
+                Else
+            MsgBox("Selecteer alsublieft een bericht om te rapporteren.", MsgBoxStyle.OkOnly, "Fraudehelpdesk Reporter - Geen bericht geselecteerd")
+                End If
 
     End Sub
 

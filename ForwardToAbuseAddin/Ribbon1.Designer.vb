@@ -66,7 +66,7 @@
         'PHISHING
         '
         Me.PHISHING.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
-        Me.PHISHING.Label = "Mail rapporteren"
+        Me.PHISHING.Label = "Rapporteren"
         Me.PHISHING.Name = "PHISHING"
         Me.PHISHING.OfficeImageId = "TrustCenter"
         Me.PHISHING.ShowImage = True

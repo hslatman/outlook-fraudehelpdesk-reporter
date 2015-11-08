@@ -1,4 +1,6 @@
-﻿Imports System
+﻿Imports System.Resources
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 Imports System.Security
@@ -9,10 +11,10 @@ Imports System.Security
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("PhishReporter")> 
-<Assembly: AssemblyDescription("PhishReporter is an Outlook Add-In to forward phishing emails as attachments to a specific mailbox.")> 
-<Assembly: AssemblyCompany("MSAdministrator")> 
-<Assembly: AssemblyProduct("PhishReporter")> 
+<Assembly: AssemblyTitle("Fraudehelpdesk Reporter")> 
+<Assembly: AssemblyDescription("Fraudehelpdesk Reporter is een Outlook Add-In om verdachte emails als bijlage door te sturen naar de Fraudehelpdesk.")> 
+<Assembly: AssemblyCompany("Fraudehelpdesk")> 
+<Assembly: AssemblyProduct("Fraudehelpdesk Reporter")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
@@ -35,8 +37,10 @@ Imports System.Security
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.1.0.0")> 
+<Assembly: AssemblyFileVersion("1.1.0.0")> 
+
+<Assembly: NeutralResourcesLanguageAttribute("nl-NL")> 
 
 Friend Module DesignTimeConstants
     Public Const RibbonTypeSerializer As String = "Microsoft.VisualStudio.Tools.Office.Ribbon.Serialization.RibbonTypeCodeDomSerializer, Microsoft.VisualStudio.Tools.Office.Designer, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"

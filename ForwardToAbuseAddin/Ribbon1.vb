@@ -27,15 +27,15 @@ Public Class HOME
 
                 Dim exp As Outlook.Explorer = Globals.ThisAddIn.Application.ActiveExplorer()
                 If exp.Selection.Count Then
-            Dim response = MsgBox("Het geselecteerde bericht zal doorgestuurd worden naar valse-email@fraudehelpdesk.nl." & vbCrLf & vbCrLf & "Wilt u doorgaan?", MsgBoxStyle.YesNo, "Fraudehelpdesk Reporter")
+            Dim response = MsgBox("Het geselecteerde bericht zal doorgestuurd worden naar valse-email@fraudehelpdesk.nl en verplaatst worden naar verwijderde items." & vbCrLf & vbCrLf & "Wilt u doorgaan?", MsgBoxStyle.YesNo, "Fraudehelpdesk Reporter")
                     If response = MsgBoxResult.Yes Then
                         Dim selectedMail As Outlook.MailItem = exp.Selection(1)
                         Dim newMail As Outlook.MailItem = Globals.ThisAddIn.Application.CreateItem(Outlook.OlItemType.olMailItem)
                         newMail.Attachments.Add(selectedMail, Outlook.OlAttachmentType.olEmbeddeditem)
                 newMail.Subject = "[SPAM/PHISHING/MALWARE] - Fraudehelpdesk Reporter v" & a.GetName().Version.ToString()
-                newMail.To = "hermanslatman@hotmail.com"
+                newMail.To = "valse-email@fraudehelpdesk.nl"
                         newMail.Send()
-                'selectedMail.Delete()
+                selectedMail.Delete()
                     Else
                     End If
                 Else

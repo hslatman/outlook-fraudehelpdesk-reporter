@@ -59,18 +59,18 @@
         'Group1
         '
         Me.Group1.Items.Add(Me.PHISHING)
-        Me.Group1.Label = "PhishReporter"
+        Me.Group1.Label = "Fraudehelpdesk"
         Me.Group1.Name = "Group1"
         Me.Group1.Position = Me.Factory.RibbonPosition.BeforeOfficeId("GroupQuickSteps")
         '
         'PHISHING
         '
         Me.PHISHING.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
-        Me.PHISHING.Label = "PhishReporter"
+        Me.PHISHING.Label = "Mail rapporteren"
         Me.PHISHING.Name = "PHISHING"
         Me.PHISHING.OfficeImageId = "TrustCenter"
-        Me.PHISHING.ShowImage = true
-        Me.PHISHING.SuperTip = "Click this button to forward phishing attempts."
+        Me.PHISHING.ShowImage = True
+        Me.PHISHING.SuperTip = "Stuur deze email door naar de Fraudehelpdesk"
         '
         'HOME
         '

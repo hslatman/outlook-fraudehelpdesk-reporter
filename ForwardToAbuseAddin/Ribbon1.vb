@@ -26,13 +26,13 @@ Public Class HOME
         
         Dim exp As Outlook.Explorer = Globals.ThisAddIn.Application.ActiveExplorer()
         If exp.Selection.Count Then
-            Dim response = MsgBox("The selected message will be forwarded to phishing@company.com" & vbCrLf & " and removed from your inbox.  Would you like to continue?", MsgBoxStyle.YesNo, "PhishReporter Report Phishing")
+            Dim response = MsgBox("The selected message will be forwarded to hermanslatman@hotmail.com" & vbCrLf & " and removed from your inbox.  Would you like to continue?", MsgBoxStyle.YesNo, "PhishReporter Report Phishing")
             If response = MsgBoxResult.Yes Then
                 Dim selectedMail As Outlook.MailItem = exp.Selection(1)
                 Dim newMail As Outlook.MailItem = Globals.ThisAddIn.Application.CreateItem(Outlook.OlItemType.olMailItem)
                 newMail.Attachments.Add(selectedMail, Outlook.OlAttachmentType.olEmbeddeditem)
                 newMail.Subject = "[SPAM/PHISHING]"
-                newMail.To = "phishing@company.com"
+                newMail.To = "hermanslatman@hotmail.com"
                 newMail.Send()
                 selectedMail.Delete()
             Else

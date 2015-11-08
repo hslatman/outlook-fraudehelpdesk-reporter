@@ -10,7 +10,7 @@ An Outlook Add-In providing an easy way for forwarding suspicious emails as an a
 
 1. Clone the repository
 2. Make changes to Ribbon1.vb
-..* More advanced changes can be made in other files
+  * More advanced changes can be made in other files
 3. Rebuild the FraudehelpdeskReporter project
 4. Rebuild the Setup project
 

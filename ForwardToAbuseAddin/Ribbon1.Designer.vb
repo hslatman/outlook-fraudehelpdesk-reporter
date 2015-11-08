@@ -41,11 +41,12 @@
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HOME))
         Me.PhishReporter = Me.Factory.CreateRibbonTab
         Me.Group1 = Me.Factory.CreateRibbonGroup
         Me.PHISHING = Me.Factory.CreateRibbonButton
-        Me.PhishReporter.SuspendLayout
-        Me.Group1.SuspendLayout
+        Me.PhishReporter.SuspendLayout()
+        Me.Group1.SuspendLayout()
         '
         'PhishReporter
         '
@@ -66,6 +67,7 @@
         'PHISHING
         '
         Me.PHISHING.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
+        Me.PHISHING.Image = CType(resources.GetObject("PHISHING.Image"), System.Drawing.Image)
         Me.PHISHING.Label = "Rapporteren"
         Me.PHISHING.Name = "PHISHING"
         Me.PHISHING.OfficeImageId = "TrustCenter"
@@ -75,15 +77,15 @@
         'HOME
         '
         Me.Name = "HOME"
-        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Compose, Microsoft.Outlook.Mai"& _ 
+        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Compose, Microsoft.Outlook.Mai" & _
     "l.Read"
         Me.Tabs.Add(Me.PhishReporter)
-        Me.PhishReporter.ResumeLayout(false)
-        Me.PhishReporter.PerformLayout
-        Me.Group1.ResumeLayout(false)
-        Me.Group1.PerformLayout
+        Me.PhishReporter.ResumeLayout(False)
+        Me.PhishReporter.PerformLayout()
+        Me.Group1.ResumeLayout(False)
+        Me.Group1.PerformLayout()
 
-End Sub
+    End Sub
 
     Friend WithEvents Group1 As Microsoft.Office.Tools.Ribbon.RibbonGroup
     Friend WithEvents PHISHING As Microsoft.Office.Tools.Ribbon.RibbonButton

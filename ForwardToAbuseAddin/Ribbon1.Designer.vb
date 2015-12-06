@@ -77,8 +77,7 @@
         'HOME
         '
         Me.Name = "HOME"
-        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Compose, Microsoft.Outlook.Mai" & _
-    "l.Read"
+        Me.RibbonType = "Microsoft.Outlook.Explorer, Microsoft.Outlook.Mail.Read"
         Me.Tabs.Add(Me.PhishReporter)
         Me.PhishReporter.ResumeLayout(False)
         Me.PhishReporter.PerformLayout()

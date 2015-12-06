@@ -32,6 +32,10 @@ Possible additions and changes:
 * Show report button in additional places, like the email viewer
 * Cleaner (de)installation process if possible
 
+## License
+
+Licensed under [GPLv3](LICENSE)
+
 ## Credits
 
 This project is based on the work performed by [Josh Rickard](http://msadministrator.com/) as described in his blog post on http://msadministrator.com/2015/10/31/phishreporter-outlook-add-in/. Later an updated version appeared on [GitHub](https://github.com/MSAdministrator/PhishReporter-Outlook-Add-In)

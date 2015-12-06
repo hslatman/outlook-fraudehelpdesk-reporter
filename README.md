@@ -6,7 +6,7 @@ An Outlook Add-In providing an easy way for forwarding suspicious emails as an a
 
 * Visual Studio (Tested with VS Ultimate 2013 and [2015](https://github.com/MSAdministrator/PhishReporter-Outlook-Add-In#requirements-to-buildcustomize-the-phishreporter-outlook-add-in))
 * Visual Studio Office Developer Tools
-* [Visual Studio Installer Projects Extension](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d)
+* Visual Studio [Installer Projects Extension](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d)
 
 1. Clone the repository
 2. Make changes to Ribbon1.vb
@@ -34,8 +34,8 @@ Possible additions and changes:
 
 ## License
 
-Licensed under [GPLv3](LICENSE)
+Licensed under [GPLv3](LICENSE).
 
 ## Credits
 
-This project is based on the work performed by [Josh Rickard](http://msadministrator.com/) as described in his blog post on http://msadministrator.com/2015/10/31/phishreporter-outlook-add-in/. Later an updated version appeared on [GitHub](https://github.com/MSAdministrator/PhishReporter-Outlook-Add-In)
+This project is based on the work performed by [Josh Rickard](http://msadministrator.com/) as described in his blog post on http://msadministrator.com/2015/10/31/phishreporter-outlook-add-in/. Later an updated version appeared on [GitHub](https://github.com/MSAdministrator/PhishReporter-Outlook-Add-In).

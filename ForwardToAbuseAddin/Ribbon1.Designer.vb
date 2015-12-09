@@ -71,6 +71,7 @@
         Me.PHISHING.Label = "Rapporteren"
         Me.PHISHING.Name = "PHISHING"
         Me.PHISHING.OfficeImageId = "TrustCenter"
+        Me.PHISHING.ScreenTip = "Rapporteer email"
         Me.PHISHING.ShowImage = True
         Me.PHISHING.SuperTip = "Stuur deze email door naar de Fraudehelpdesk"
         '

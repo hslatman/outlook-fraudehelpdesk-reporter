@@ -29,7 +29,7 @@ Possible additions and changes:
 
 * Easier customization when developing
 * Customization options for end users
-* Show report button in additional places, like the email viewer
+* ~~Show report button in additional places, like the email viewer~~
 * Cleaner (de)installation process if possible
 
 ## License

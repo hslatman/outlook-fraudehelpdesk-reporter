@@ -193,6 +193,12 @@
   -->
   <ItemGroup>
     <AppDesigner Include="My Project\" />
+    <Compile Include="ReadMessageRibbon.Designer.vb">
+      <DependentUpon>ReadMessageRibbon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReadMessageRibbon.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ribbon1.Designer.vb">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </Compile>
@@ -202,6 +208,9 @@
     <Compile Include="ThisAddIn.vb">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="ReadMessageRibbon.resx">
+      <DependentUpon>ReadMessageRibbon.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </EmbeddedResource>

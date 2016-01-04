@@ -193,6 +193,7 @@
   -->
   <ItemGroup>
     <AppDesigner Include="My Project\" />
+    <Compile Include="ClickCode.vb" />
     <Compile Include="ReadMessageRibbon.Designer.vb">
       <DependentUpon>ReadMessageRibbon.vb</DependentUpon>
     </Compile>

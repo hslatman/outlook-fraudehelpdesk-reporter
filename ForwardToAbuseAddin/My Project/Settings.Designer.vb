@@ -52,6 +52,30 @@ Partial Friend NotInheritable Class MySettings
             Return defaultInstance
         End Get
     End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+    Public Property SendReaction() As Boolean
+        Get
+            Return CType(Me("SendReaction"),Boolean)
+        End Get
+        Set
+            Me("SendReaction") = value
+        End Set
+    End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+    Public Property CheckUpdates() As Boolean
+        Get
+            Return CType(Me("CheckUpdates"),Boolean)
+        End Get
+        Set
+            Me("CheckUpdates") = value
+        End Set
+    End Property
 End Class
 
 Namespace My

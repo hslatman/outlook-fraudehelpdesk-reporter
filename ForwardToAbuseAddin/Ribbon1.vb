@@ -12,7 +12,7 @@ Public Class HOME
 
     Private Sub Button1_Click(sender As Object, e As RibbonControlEventArgs) Handles PHISHING.Click
 
-        ClickCode.Click()
+        ForwardCode.Click()
 
     End Sub
 

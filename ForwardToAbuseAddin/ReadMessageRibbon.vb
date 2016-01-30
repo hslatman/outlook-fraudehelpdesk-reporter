@@ -10,7 +10,7 @@ Public Class ReadMessageRibbon
 
     Private Sub Button1_Click(sender As Object, e As RibbonControlEventArgs) Handles Phishing.Click
 
-        ClickCode.Click()
+        ForwardCode.Click()
 
     End Sub
 End Class

@@ -15,6 +15,13 @@ An Outlook Add-In providing an easy way for forwarding suspicious emails as an a
 4. Rebuild the Setup project
 
 
+## Combined Setup
+
+After compilation of the Setup Project, there will be two files in the Setup/(Debug|Release) folder. These can be 
+combined using IExpress. Simply starting IExpress from the commandline, and create a new package. Also see: 
+http://stackoverflow.com/questions/535966/merge-msi-and-exe
+
+
 ## Installation
 
 Windows binaries will be available soon!
@@ -30,7 +37,8 @@ Possible additions and changes:
 * Easier customization when developing
 * Customization options for end users
 * ~~Show report button in additional places, like the email viewer~~
-* Cleaner (de)installation process if possible
+* ~~Cleaner (de)installation process if possible~~
+* Add a post-build event that combines the setup.exe and .msi installer. (i.e. IExpress)
 
 ## License
 

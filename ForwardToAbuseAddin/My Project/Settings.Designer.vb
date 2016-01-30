@@ -65,14 +65,14 @@ Partial Friend NotInheritable Class MySettings
         End Set
     End Property
     
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+    <Global.System.Configuration.UserScopedSettingAttribute(), _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+     Global.System.Configuration.DefaultSettingValueAttribute("True")> _
     Public Property CheckUpdates() As Boolean
         Get
-            Return CType(Me("CheckUpdates"),Boolean)
+            Return CType(Me("CheckUpdates"), Boolean)
         End Get
-        Set
+        Set(value As Boolean)
             Me("CheckUpdates") = value
         End Set
     End Property

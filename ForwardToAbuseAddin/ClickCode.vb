@@ -52,13 +52,13 @@ Module ForwardCode
         'Dim userSettings As UserSettingsGroup = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).GetSection()
 
 
-        Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
-        Dim checkUpdate As ClientSettingsSection = configFile.GetSection("userSettings/ForwardToAbuseAddin.MySettings")
+        'Dim configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
+        'Dim checkUpdate As ClientSettingsSection = configFile.GetSection("userSettings/ForwardToAbuseAddin.MySettings")
 
         'Check the settings file if we should check for updates.
-        Dim shouldCheck As Boolean = Convert.ToBoolean(checkUpdate.Settings.Get("CheckUpdates").Value.ValueXml.InnerText.ToString())
+        'Dim shouldCheck As Boolean = Convert.ToBoolean(checkUpdate.Settings.Get("CheckUpdates").Value.ValueXml.InnerText.ToString())
 
-        If (shouldCheck) Then
+        If (MySettings.Default.CheckUpdates()) Then
 
             'check the current assembly version
             Dim a = Assembly.GetExecutingAssembly()

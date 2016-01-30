@@ -522,7 +522,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Fraudehelpdesk Reporter Outlook Add-In"
         "ProductCode" = "8:{A34CAD81-D0AE-46A4-B2ED-E49AE69C1CFB}"
-        "PackageCode" = "8:{1AD77CEA-4E88-47DB-AFB1-53EE50767941}"
+        "PackageCode" = "8:{5CC77353-7E7F-48BB-95B2-FC6F869AA493}"
         "UpgradeCode" = "8:{8A5CEC54-EC69-4A3B-A3EB-E5874BCEF3EF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

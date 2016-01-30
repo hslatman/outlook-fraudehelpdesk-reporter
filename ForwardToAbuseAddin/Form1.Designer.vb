@@ -46,7 +46,6 @@ Partial Class Form1
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Nee"
         Me.Button1.UseVisualStyleBackColor = True
-        Me.CancelButton = Button1
         '
         'Button2
         '
@@ -57,7 +56,6 @@ Partial Class Form1
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Ja"
         Me.Button2.UseVisualStyleBackColor = True
-        Me.AcceptButton = Button2
         '
         'Button3
         '
@@ -70,15 +68,17 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(335, 143)
-        Me.StartPosition = Windows.Forms.FormStartPosition.CenterParent
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Fraudehelpdesk Reporter"
         Me.ResumeLayout(False)
 

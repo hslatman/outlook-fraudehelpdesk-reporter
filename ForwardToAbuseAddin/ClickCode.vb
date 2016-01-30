@@ -58,7 +58,7 @@ Module ForwardCode
         'Check the settings file if we should check for updates.
         'Dim shouldCheck As Boolean = Convert.ToBoolean(checkUpdate.Settings.Get("CheckUpdates").Value.ValueXml.InnerText.ToString())
 
-        If (MySettings.Default.CheckUpdates()) Then
+        If (MySettings.Default.CheckUpdates) Then
 
             'check the current assembly version
             Dim a = Assembly.GetExecutingAssembly()

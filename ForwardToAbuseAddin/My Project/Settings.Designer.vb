@@ -85,6 +85,15 @@ Partial Friend NotInheritable Class MySettings
             Return CType(Me("ReportAddress"), String)
         End Get
     End Property
+
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(), _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+     Global.System.Configuration.DefaultSettingValueAttribute("http://localhost/fhd-reporter/fhd_download_manifest.xml")> _
+    Public ReadOnly Property ManifestUrl() As String
+        Get
+            Return CType(Me("ManifestUrl"), String)
+        End Get
+    End Property
 End Class
 
 Namespace My

@@ -69,7 +69,7 @@ Module ForwardCode
             Dim a = Assembly.GetExecutingAssembly()
             Dim version = a.GetName().Version
 
-            Dim URLString As String = "http://localhost/fhd_download_manifest.xml"
+            Dim URLString As String = MySettings.Default.ManifestUrl
             Dim wrGETURL As WebRequest
             wrGETURL = WebRequest.Create(URLString)
             wrGETURL.Proxy = WebRequest.DefaultWebProxy()

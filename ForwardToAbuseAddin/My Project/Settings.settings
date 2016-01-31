@@ -11,5 +11,8 @@
     <Setting Name="ReportAddress" Type="System.String" Scope="Application">
       <Value Profile="(Default)">hermanslatman@hotmail.com</Value>
     </Setting>
+    <Setting Name="ManifestUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/fhd-reporter/fhd_download_manifest.xml</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

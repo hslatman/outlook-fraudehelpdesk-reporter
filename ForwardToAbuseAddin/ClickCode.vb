@@ -27,7 +27,7 @@ Module ForwardCode
 
                 reportEmail.Attachments.Add(phishEmail, Outlook.OlAttachmentType.olEmbeddeditem)
                 reportEmail.Subject = "[SPAM/PHISHING/MALWARE] - Fraudehelpdesk Reporter v" & a.GetName().Version.ToString()
-                reportEmail.To = "hermanslatman@hotmail.com"
+                reportEmail.To = MySettings.Default.ReportAddress
                 reportEmail.Body = "Deze email is verstuurd met de Fraudehelpdesk Reporter."
 
                 'If String.IsNullOrEmpty(PhishReporterConfig.RunbookURL) Then

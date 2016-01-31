@@ -76,6 +76,15 @@ Partial Friend NotInheritable Class MySettings
             Me("CheckUpdates") = value
         End Set
     End Property
+
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(), _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+     Global.System.Configuration.DefaultSettingValueAttribute("hermanslatman@hotmail.com")> _
+    Public ReadOnly Property ReportAddress() As String
+        Get
+            Return CType(Me("ReportAddress"), String)
+        End Get
+    End Property
 End Class
 
 Namespace My

@@ -16,8 +16,14 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_171C0A7B5CD1965BB953DE3E49B6752E"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -29,7 +35,7 @@
         "Entry"
         {
         "MsmKey" = "8:_27D80DA21687FDBBF230FF71853F7150"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -53,49 +59,49 @@
         "Entry"
         {
         "MsmKey" = "8:_424B7ADF5127971E48A0BD75606AD0E9"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4CD4A9FA877E090C87C3F43B77139872"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8648234A646E65DB9FA10E7FC4959FAF"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_972439DF73FD4E1AB8A3FCEC92228EEE"
+        "MsmKey" = "8:_4D141C27BF7C48F4940F1002B07DBE42"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C5B16AC51E5F4C8B96DE3642C0DC011B"
+        "MsmKey" = "8:_8648234A646E65DB9FA10E7FC4959FAF"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B4A3EF6DB1FE456394EB05FB0D5FCA3E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_D8D79498B7F0128E81DCCCF84CA4DFC1"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+        "OwnerKey" = "8:_424B7ADF5127971E48A0BD75606AD0E9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -128,12 +134,6 @@
         "OwnerKey" = "8:_171C0A7B5CD1965BB953DE3E49B6752E"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_424B7ADF5127971E48A0BD75606AD0E9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -142,7 +142,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\FraudehelpdeskReporter-x64.msi"
+        "OutputFilename" = "8:Debug\\FraudehelpdeskReporterAddIn.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -161,10 +161,20 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    "Name" = "8:Microsoft .NET Framework 4 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.VSTORuntime.4.0"
+                    {
+                    "Name" = "8:Microsoft Visual Studio 2010 Tools for Office Runtime (x86 and x64)"
+                    "ProductCode" = "8:Microsoft.VSTORuntime.4.0"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.4.5"
+                    {
+                    "Name" = "8:Windows Installer 4.5"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.4.5"
                     }
                 }
             }
@@ -174,7 +184,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\FraudehelpdeskReporterAdd-In-x86.msi"
+        "OutputFilename" = "8:Release\\FraudehelpdeskReporterAddIn.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -363,6 +373,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4D141C27BF7C48F4940F1002B07DBE42"
+            {
+            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\FraudehelpdeskReporter.dll.manifest"
+            "TargetName" = "8:FraudehelpdeskReporter.dll.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_479C70E5422344A6944966282BE13B26"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8648234A646E65DB9FA10E7FC4959FAF"
             {
             "AssemblyRegister" = "3:1"
@@ -394,30 +424,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_972439DF73FD4E1AB8A3FCEC92228EEE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B4A3EF6DB1FE456394EB05FB0D5FCA3E"
             {
             "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\FraudehelpdeskReporter.vsto"
             "TargetName" = "8:FraudehelpdeskReporter.vsto"
-            "Tag" = "8:"
-            "Folder" = "8:_479C70E5422344A6944966282BE13B26"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5B16AC51E5F4C8B96DE3642C0DC011B"
-            {
-            "SourcePath" = "8:..\\ForwardToAbuseAddin\\bin\\Release\\FraudehelpdeskReporter.dll.manifest"
-            "TargetName" = "8:FraudehelpdeskReporter.dll.manifest"
             "Tag" = "8:"
             "Folder" = "8:_479C70E5422344A6944966282BE13B26"
             "Condition" = "8:"
@@ -473,7 +483,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_479C70E5422344A6944966282BE13B26"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -522,7 +532,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Fraudehelpdesk Reporter Outlook Add-In"
         "ProductCode" = "8:{A34CAD81-D0AE-46A4-B2ED-E49AE69C1CFB}"
-        "PackageCode" = "8:{8234CF5B-63F2-4200-8EF2-9233074A0EEC}"
+        "PackageCode" = "8:{EAF0C364-AB1A-499E-A305-3CF7A99AF8EE}"
         "UpgradeCode" = "8:{8A5CEC54-EC69-4A3B-A3EB-E5874BCEF3EF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -543,7 +553,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:1"
+        "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -1449,7 +1459,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EA4616890F5A4A60BD3CFEA5BA334AA2"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0D72710561524C35BCE2CDD9B16E517B"
             {
             "SourcePath" = "8:..\\ForwardToAbuseAddin\\obj\\Release\\FraudehelpdeskReporter.dll"
             "TargetName" = "8:"
@@ -1469,7 +1479,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{CB225C4D-267C-4ED5-ADC7-E42A824A18C2}"
             "ShowKeyOutput" = "11:TRUE"

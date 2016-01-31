@@ -42,7 +42,6 @@ Partial Class Form2
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Checked = Global.ForwardToAbuseAddin.MySettings.Default.CheckUpdates
-        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox2.Location = New System.Drawing.Point(12, 35)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(100, 17)

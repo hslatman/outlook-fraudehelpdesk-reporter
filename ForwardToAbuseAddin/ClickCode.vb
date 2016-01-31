@@ -30,6 +30,11 @@ Module ForwardCode
                 reportEmail.To = MySettings.Default.ReportAddress
                 reportEmail.Body = "Deze email is verstuurd met de Fraudehelpdesk Reporter."
 
+                Dim pa As Outlook.PropertyAccessor = reportEmail.PropertyAccessor
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Version", a.GetName().Version.ToString())
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Reaction", MySettings.Default.SendReaction.ToString())
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Updates", MySettings.Default.CheckUpdates.ToString())
+
                 'If String.IsNullOrEmpty(PhishReporterConfig.RunbookURL) Then
                 'reportEmail.Body = reportEmail.Body & "."
                 'Else

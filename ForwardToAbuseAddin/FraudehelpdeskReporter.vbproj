@@ -244,7 +244,6 @@
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="PhishReporter_1_TemporaryKey.pfx" />
     <None Include="PhishReporter_TemporaryKey.pfx" />
@@ -276,6 +275,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <None Include="pub/app.config" />
+  </ItemGroup>  
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>

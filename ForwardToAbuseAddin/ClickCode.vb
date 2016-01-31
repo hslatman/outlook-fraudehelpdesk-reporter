@@ -27,8 +27,13 @@ Module ForwardCode
 
                 reportEmail.Attachments.Add(phishEmail, Outlook.OlAttachmentType.olEmbeddeditem)
                 reportEmail.Subject = "[SPAM/PHISHING/MALWARE] - Fraudehelpdesk Reporter v" & a.GetName().Version.ToString()
-                reportEmail.To = "hermanslatman@hotmail.com"
+                reportEmail.To = MySettings.Default.ReportAddress
                 reportEmail.Body = "Deze email is verstuurd met de Fraudehelpdesk Reporter."
+
+                Dim pa As Outlook.PropertyAccessor = reportEmail.PropertyAccessor
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Version", a.GetName().Version.ToString())
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Reaction", MySettings.Default.SendReaction.ToString())
+                pa.SetProperty("http://schemas.microsoft.com/mapi/string/{00020386-0000-0000-C000-000000000046}/X-FHD-Reporter-Updates", MySettings.Default.CheckUpdates.ToString())
 
                 'If String.IsNullOrEmpty(PhishReporterConfig.RunbookURL) Then
                 'reportEmail.Body = reportEmail.Body & "."
@@ -64,7 +69,7 @@ Module ForwardCode
             Dim a = Assembly.GetExecutingAssembly()
             Dim version = a.GetName().Version
 
-            Dim URLString As String = "http://localhost/fhd_download_manifest.xml"
+            Dim URLString As String = MySettings.Default.ManifestUrl
             Dim wrGETURL As WebRequest
             wrGETURL = WebRequest.Create(URLString)
             wrGETURL.Proxy = WebRequest.DefaultWebProxy()

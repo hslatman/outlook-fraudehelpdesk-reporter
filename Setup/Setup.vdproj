@@ -522,7 +522,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Fraudehelpdesk Reporter Outlook Add-In"
         "ProductCode" = "8:{A34CAD81-D0AE-46A4-B2ED-E49AE69C1CFB}"
-        "PackageCode" = "8:{5CC77353-7E7F-48BB-95B2-FC6F869AA493}"
+        "PackageCode" = "8:{8234CF5B-63F2-4200-8EF2-9233074A0EEC}"
         "UpgradeCode" = "8:{8A5CEC54-EC69-4A3B-A3EB-E5874BCEF3EF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -617,7 +617,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:TRUE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
+                                                                    "Value" = "8:file:///[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1D22B746FCF443949911148556AF646A"
                                                                     {
@@ -744,7 +744,7 @@
                                                                             "Condition" = "8:"
                                                                             "Transitive" = "11:FALSE"
                                                                             "ValueTypes" = "3:1"
-                                                                            "Value" = "8:[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
+                                                                            "Value" = "8:file:///[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
                                                                             }
                                                                             "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B17AAD81F22845A4B12FAF32E953CB2B"
                                                                             {
@@ -855,7 +855,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
+                                                                    "Value" = "8:file:///[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A436D6AD4FC0470388624D5A9BAD4DB6"
                                                                     {
@@ -982,7 +982,7 @@
                                                                             "Condition" = "8:"
                                                                             "Transitive" = "11:FALSE"
                                                                             "ValueTypes" = "3:1"
-                                                                            "Value" = "8:[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
+                                                                            "Value" = "8:file:///[TARGETDIR]FraudehelpdeskReporter.vsto|vstolocal"
                                                                             }
                                                                             "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E0B8B0C16E9242F58E4FFA291A56A341"
                                                                             {

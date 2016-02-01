@@ -23,10 +23,12 @@ Visual Studio 2013 has been used to develop the plugin, and will most likely giv
 5. Most of the functional code resides in the ClickCode.vb module
   * Changed the other files to change more advanced functionality
 6. Rebuild the FraudehelpdeskReporter project using Debug or Release configuration
+  * Check the Signing properties: assemblies can be signed if necessary
 7. Rebuild the Setup project
   * The Setup project always uses the files generated in the Release configuration (i.e. the .vsto and .dll)
   * It does use the right configuration file (i.e. Debug configuration for FraudehelpdeskReporter when building Setup with the Debug configuration)
   * Optionally, combine the setup files like described below, to create a single setup package
+  * Signing the Windows Installer project (i.e. the setup.exe and .msi file) is *not* supported at the moment (see roadmap)
 8. Deploy the fhd_download_manifest.xml file and the installer package to the location set in the corresponding app.config file
   * Make changes to the fhd_download_manifest.xml file: set the version of the assembly that was compiled and specify a location for the new version download
   * The fhd_download_manifest.xml file and the installer package do not necessarily have to be in the same place: it depends on the contents of the 
@@ -95,6 +97,7 @@ Possible additions and changes:
 * ~~Cleaner (de)installation process if possible~~
 * Add a post-build event that combines the setup.exe and .msi installer. (i.e. IExpress)
 * Better localization, using resource files
+* Post build event for signing the installer project (and possible combined setup file)
 * Clearer code documentation
 * Refactoring
 

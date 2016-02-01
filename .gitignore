@@ -155,3 +155,6 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+# Don't track the app.config file in Git distribution
+*app.config

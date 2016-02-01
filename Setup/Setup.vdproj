@@ -95,12 +95,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_424B7ADF5127971E48A0BD75606AD0E9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0D72710561524C35BCE2CDD9B16E517B"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -134,6 +128,12 @@
         "OwnerKey" = "8:_171C0A7B5CD1965BB953DE3E49B6752E"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_424B7ADF5127971E48A0BD75606AD0E9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -142,7 +142,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\FraudehelpdeskReporterAddIn.msi"
+        "OutputFilename" = "8:Debug\\FraudehelpdeskReporterAddIn-Debug.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1461,7 +1461,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0D72710561524C35BCE2CDD9B16E517B"
             {
-            "SourcePath" = "8:..\\ForwardToAbuseAddin\\obj\\Release\\FraudehelpdeskReporter.dll"
+            "SourcePath" = "8:..\\ForwardToAbuseAddin\\obj\\Debug\\FraudehelpdeskReporter.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_479C70E5422344A6944966282BE13B26"
